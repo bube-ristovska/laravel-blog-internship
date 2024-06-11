@@ -1,10 +1,10 @@
 <x-layout>
     <header class="max-w-xl mx-auto mt-20 text-center">
         <h1 class="text-4xl">
-            Latest <span class="text-blue-500">Tetovo</span> News
+            Latest <span class="text-blue-500">DEVOPS :) </span> News
         </h1>
 
-        <h2 class="inline-flex mt-2">By Sara and Bube </h2>
+        <h2 class="inline-flex mt-2">212016 </h2>
 
         <p class="text-sm mt-14">
             Another year. Another drama. We're refreshing the popular news series with new content.
