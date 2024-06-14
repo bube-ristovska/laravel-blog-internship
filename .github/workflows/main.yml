@@ -48,10 +48,12 @@ jobs:
           pwd
           cat deployment.yaml
           pwd
-          sed -i "s+bube-ristovska/blog.*+buberistovska/blog:latest+g" deployment.yaml
-          sed -i "s+bube-ristovska/blog.*+buberistovska/mysql:latest+g" deployment.yaml
+          sed -i "s+bube-ristovska/blog.*+buberistovska/blog:v+g" deployment.yaml
+          sed -i "s+bube-ristovska/mysql.*+buberistovska/mysql:v+g" deployment.yaml
           cat deployment.yaml
           git add .
+          git status
+          git diff
           git commit -m 'Done  by Github Actions Job changemanifest: ${{ github.run_number }}'
           git push origin main
         env:
