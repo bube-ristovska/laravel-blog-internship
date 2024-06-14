@@ -49,8 +49,8 @@ jobs:
           pwd
           cat deployment.yaml
           pwd
-          sed -i "s+buberistovska/blog.*+buberistovska/blog:v+g" deployment.yaml
-          sed -i "s+buberistovska/mysql.*+buberistovska/mysql:v+g" deployment.yaml
+          sed -i "s+buberistovska/blog.*+buberistovska/blog:v$RUN_NUMBER+g" deployment.yaml
+          sed -i "s+buberistovska/mysql.*+buberistovska/mysql:v$RUN_NUMBER+g" deployment.yaml
           cat deployment.yaml
           git add .
           git status
