@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: CI/CD Pipeline
 
 on:
   push:
@@ -48,8 +48,8 @@ jobs:
           pwd
           cat deployment.yaml
           pwd
-          sed -i "s+bube-ristovska/blog.*+buberistovska/blog:v+g" deployment.yaml
-          sed -i "s+bube-ristovska/mysql.*+buberistovska/mysql:v+g" deployment.yaml
+          sed -i "s+buberistovska/blog.*+buberistovska/blog:v+g" deployment.yaml
+          sed -i "s+buberistovska/mysql.*+buberistovska/mysql:v+g" deployment.yaml
           cat deployment.yaml
           git add .
           git status
