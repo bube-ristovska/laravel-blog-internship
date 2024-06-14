@@ -27,7 +27,8 @@ jobs:
       run: docker push ${{ secrets.DOCKER_USERNAME }}/blog:latest
       
     - name: Build MySQL Docker Image
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mysql:latest -f Dockerfile.mysql .
-
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mysql:latest -f docker-database/Dockerfile .
+      working-directory: .
+      
     - name: Push MySQL Docker Image
       run: docker push ${{ secrets.DOCKER_USERNAME }}/mysql:latest
