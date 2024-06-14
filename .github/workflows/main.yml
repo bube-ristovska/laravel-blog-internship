@@ -32,6 +32,7 @@ jobs:
       
     - name: Push MySQL Docker Image
       run: docker push ${{ secrets.DOCKER_USERNAME }}/mysql:v${{ github.run_number }}
+      
   modifygit:
     needs: build-and-push
     runs-on: ubuntu-latest
