@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-push:
-    name: Build and Push Docker Image
+    name: Build and Push Docker Images
     runs-on: ubuntu-latest
 
     steps:
@@ -25,3 +25,9 @@ jobs:
       
     - name: Push Docker Image
       run: docker push ${{ secrets.DOCKER_USERNAME }}/blog:latest
+      
+    - name: Build MySQL Docker Image
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mysql:latest -f Dockerfile.mysql .
+
+    - name: Push MySQL Docker Image
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/mysql:latest
