@@ -1,7 +1,7 @@
 <x-layout>
     <header class="max-w-xl mx-auto mt-20 text-center">
         <h1 class="text-4xl">
-            Latest <span class="text-blue-500">DEVOPS :) </span> News
+            Latest <span class="text-blue-500">DEVOPS Test :) </span> News
         </h1>
 
         <h2 class="inline-flex mt-2">212016 </h2>
